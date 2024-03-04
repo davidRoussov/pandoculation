@@ -1,0 +1,28 @@
+{
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "title": "CuratedListing",
+   "type": "object",
+   "properties": {
+     "items": {
+       "type": "array",
+       "items": {
+         "$ref": "#/definitions/CuratedListingItem"
+       }
+     }
+   },
+   "required": ["items"],
+   "definitions": {
+     "CuratedListingItem": {
+       "type": "object",
+       "properties": {
+         "data": {
+           "type": "object",
+           "additionalProperties": {
+             "type": "string"
+           }
+         }
+       },
+       "required": ["data"]
+     }
+   }
+ }
