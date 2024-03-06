@@ -8,6 +8,7 @@
     "sourceMap": true,
     "outDir": "build",
     "strict": true,
+    "baseUrl": ".",
     "forceConsistentCasingInFileNames": true
   },
   "include": [
