@@ -1,0 +1,13 @@
+{
+   "name": "pandoculation",
+   "version": "1.0.0",
+   "description": "Generic type definitions for textual content",
+   "scripts": {
+      "build": "ts-node ./src/build.ts"
+   },
+   "devDependencies": {
+      "@types/node": "^20.11.24",
+      "ts-node": "^10.9.2",
+      "typescript": "^5.3.3"
+   }
+}
