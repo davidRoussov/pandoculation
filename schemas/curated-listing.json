@@ -33,7 +33,7 @@
             "timestamp": {
               "type": "string"
             },
-            "chatLink": {
+            "chat_url": {
               "type": "string"
             },
             "url": {
