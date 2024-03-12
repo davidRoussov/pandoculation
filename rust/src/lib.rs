@@ -3,23 +3,23 @@ use std::collections::HashMap;
 
 #[derive(Deserialize, Serialize, Debug, Clone)]
 pub struct CuratedListing {
-    items: Vec<CuratedListingItem>,
+    pub items: Vec<CuratedListingItem>,
 }
 
 #[derive(Deserialize, Serialize, Debug, Clone)]
 pub struct CuratedListingItem {
-    data: CuratedListingItemData,
+    pub data: CuratedListingItemData,
 }
 
 #[derive(Deserialize, Serialize, Debug, Clone)]
 pub struct CuratedListingItemData {
-    title: String,
-    url: String,
-    author: Option<String>,
-    id: Option<String>,
-    points: Option<String>,
-    timestamp: Option<String>,
-    chat_url: Option<String>,
+    pub title: String,
+    pub url: String,
+    pub author: Option<String>,
+    pub id: Option<String>,
+    pub points: Option<String>,
+    pub timestamp: Option<String>,
+    pub chat_url: Option<String>,
     #[serde(flatten)]
-    additional: HashMap<String, String>,
+    pub additional: HashMap<String, String>,
 }
