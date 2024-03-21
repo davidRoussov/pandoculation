@@ -23,3 +23,25 @@ pub struct CuratedListingItemData {
     #[serde(flatten)]
     pub additional: HashMap<String, String>,
 }
+
+#[derive(Deserialize, Serialize, Debug, Clone)]
+pub struct Chat {
+    pub items: Vec<ChatItem>,
+}
+
+#[derive(Deserialize, Serialize, Debug, Clone)]
+pub struct ChatItem {
+    pub data: ChatItemData,
+}
+
+#[derive(Deserialize, Serialize, Debug, Clone)]
+pub struct ChatItemData {
+    pub text: String,
+    pub author: String,
+    pub id: String,
+    pub parentId: Option<String>,
+    pub childId: Option<String>,
+    pub timestamp: Option<String>,
+    #[serde(flatten)]
+    pub additional: HashMap<String, String>,
+}
