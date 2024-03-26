@@ -40,7 +40,6 @@ pub struct ChatItemData {
     pub author: String,
     pub id: String,
     pub parent_id: Option<String>,
-    pub child_id: Option<String>,
     pub timestamp: Option<String>,
     #[serde(flatten)]
     pub additional: HashMap<String, String>,
